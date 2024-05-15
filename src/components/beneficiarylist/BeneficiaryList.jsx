@@ -5,6 +5,7 @@ import { fetchBeneficiaries } from '../../app/features/beneficiariesSlice';
 import { useDispatch, useSelector } from 'react-redux'
 import Modal from '../model/Modal ';
 import noDataImage from '../../assets/nodata.png'
+import loader from '../../assets/loader.gif'
 
 const BeneficiaryList = ({ onView, onEdit, onDelete }) => {
   const dispatch = useDispatch();
@@ -33,12 +34,14 @@ const BeneficiaryList = ({ onView, onEdit, onDelete }) => {
   }, [status, dispatch]);
 
   if (status === 'loading') {
-    return <div>Loading...</div>;
+    return <div className='loading-section'>
+    <img src={loader} alt="loading Image" />
+   </div>;
   }
 
   if (status === 'failed') {
     return <div className='failed-section'>
-       <img src={noDataImage} alt="My Image" />
+       <img src={noDataImage} alt="failed Image" />
       </div>;
   }
   return (
