@@ -1,0 +1,21 @@
+.container {
+    width: 80%;
+    margin: 50px auto;
+    
+  }
+
+.help_text {
+    font-size: 13px;
+    font-weight: 400;
+    color: #4D5975;
+    line-height: 10px;
+    margin-bottom: 2px;
+}
+
+.text_bold {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4D5975;
+    line-height: 17.58px;
+  }
+  

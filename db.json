@@ -1,0 +1,18 @@
+{
+  "beneficiaries": [
+    {
+      "id": "6925",
+      "name": "Ravi Kumar",
+      "accountNumber": "897858648612",
+      "bankName": "SBI",
+      "accountType": "Current"
+    },
+    {
+      "id": "d04c",
+      "name": "Ankit Pandey",
+      "accountNumber": "475846878545",
+      "bankName": "BOB",
+      "accountType": "Savings"
+    }
+  ]
+}
